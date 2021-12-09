@@ -129,8 +129,12 @@ main .classify{
     text-align: center;
 }
 
-.team{
-    padding-top: 2vw;
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 200px 50px;
 }
 
 .team h1{
@@ -138,14 +142,6 @@ main .classify{
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     text-align: center;
-}
-
-.team {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 50px 100px 50px;
 }
 
 .cards-wrapper {
@@ -236,5 +232,5 @@ main .classify{
     color: #eee;
     border-radius: 0.3rem;
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-    }
+}
   
