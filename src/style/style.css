@@ -71,7 +71,7 @@ nav {
 }
 
 nav a{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 2px;
@@ -213,8 +213,8 @@ main .classify{
 
 .card-info p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 20px;
+    line-height: 16px;
     font-weight: 300;
     color: #eee;
     width: 80%;
@@ -222,15 +222,99 @@ main .classify{
 }
 
 .card-info button {
-    width: 10rem;
-    height: 3rem;
+    width: 100px;
+    height: 35px;
     background-color: #00D1FF;
     border: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
+    font-size: 15px;
+    line-height: 17px;
     color: #eee;
-    border-radius: 0.3rem;
-    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
   
+@media (max-width: 1400px){
+    .floating-bg {
+        top: -120vw;
+    }
+
+    .logo img{
+        top: 16vw;  
+    }
+
+}
+
+@media(max-width: 1150px){
+    .floating-bg {
+        top: -110vw;
+    }
+
+    .logo img{
+        top: 20vw;  
+    }
+
+    .cards-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 950px){
+    .floating-bg {
+        top: -100vw;
+    }
+
+    .logo img{
+        top: 26vw;  
+    }
+}
+
+@media(max-width: 750px){
+    .floating-bg {
+        top: -90vw;
+    }
+
+    .logo img{
+        top: 30vw;  
+        width: 9vw;
+    }
+
+    nav{
+        justify-content: space-around;
+    }
+
+    nav a{
+        font-size: 18px;
+    }
+
+    .heading{
+        bottom: 15vw;
+    }
+
+    .heading h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 550px){
+    .floating-bg {
+        top: -70vw;
+    }
+
+    .logo img{
+        top: 38vw;  
+        width: 11vw;
+    }
+
+    nav a{
+        font-size: 18px;
+    }
+
+    .heading h1{
+        font-size: 30px;
+    }
+}
