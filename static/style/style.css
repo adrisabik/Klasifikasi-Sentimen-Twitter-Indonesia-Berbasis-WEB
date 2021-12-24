@@ -113,7 +113,7 @@ main .classify{
     align-items: center;
 }
 
-.classify h2{
+.classify .section-heading{
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
@@ -182,7 +182,7 @@ main .classify{
     padding: 30px 50px 200px 50px;
 }
 
-.team h2{
+.team .section-heading{
     color: #00D1FF;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
