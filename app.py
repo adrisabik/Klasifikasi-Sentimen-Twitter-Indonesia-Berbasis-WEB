@@ -8,7 +8,7 @@ from keras.models import load_model
 app = Flask(__name__)
 
 
-model = load_model('Indonesian Abusive and Hate Speech Twitter Text/model.h5')
+model = load_model('Dataset/model.h5')
 
 
 @app.route("/", methods=["GET", "POST"])
