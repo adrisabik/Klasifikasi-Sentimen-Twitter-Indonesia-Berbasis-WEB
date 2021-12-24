@@ -30,7 +30,7 @@
 
     <main>
         <section class="classify" id="classify">
-            <h2 class="section-heading">Classify</h2>
+            <h2>Classify</h2>
             <form action="/" method="post">
                 <input class="form-input" name='form-input' type="text" placeholder="Masukkan kalimat">
                 <input class="form-btn" name="form-btn" type="submit" value="Classify">
@@ -38,22 +38,26 @@
             <div class="output">
                 <h3>Result</h3>
                 {%if classes%}
-                <h3>{{classes}}</h3>
+                <h3 class="result">{{classes}}</h3>
                 {%endif%}
             </div>
         </section>
 
         <section class="team" id="team">
-            <h2 class="section-heading">Team</h2>
+            <h2>Team</h2>
             <div class="cards-wrapper">
-                <card-item src="" name="Adri" position="Member" text="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores, impedit!">
+                <card-item src="{{ url_for('static', filename='img/profile1.JPG') }}" name="Adri" position="Member" text="Keep progressive!">
                 </card-item>
-                <card-item src="" name="Ahyan" position="Member" text="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores, impedit!">
+                <card-item src="{{ url_for('static', filename='img/profile2.jpeg') }}" name="Ahyan" position="Member" text="Live is a journey, not a destination">
                 </card-item>
             </div>
         </section>
+
+        <footer>
+            <p class="copyright">
+                Copyright &copy; CSD-163 All Rights Reserved
+            </p>
+        </footer>
     </main>
 
     <script src="{{ url_for('static', filename='index.js') }}" type="module"></script>
